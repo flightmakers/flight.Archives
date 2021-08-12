@@ -30,11 +30,11 @@ Flex元素按照主轴(main-axis)的方向排列,交叉轴(cross-axis)与主轴�
 ### Tag/项目(flex item)属性
 | 属性 | 可取值 | 说明 |
 | :---------: | :--: | :-----------: |
-| `order` | <number> | 指定项目的排列顺序,默认值为0,`order`相同时按照项目在DOM中的顺序排序 |
-| `flex-grow` | <number> | 指定项目大小的比例,默认值为0,`width`属性会优先指定flex-item的最小大小 |
-| `flex-shrink` | <number> | 指定项目大小在单行空间不足时的收缩比例,默认值为1 |
-| `flex-basis` | <length> | 指定项目在主轴方向上的初始大小 |
-| `flex` | <'flex-grow'> <'flex-shrink'> <'flex-basis'> | CSS简写属性 |
+| `order` | `<number>` | 指定项目的排列顺序,默认值为0,`order`相同时按照项目在DOM中的顺序排序 |
+| `flex-grow` | `<number>` | 指定项目大小的比例,默认值为0,`width`属性会优先指定flex-item的最小大小 |
+| `flex-shrink` | `<number>` | 指定项目大小在单行空间不足时的收缩比例,默认值为1 |
+| `flex-basis` | `<length>` | 指定项目在主轴方向上的初始大小 |
+| `flex` | `<'flex-grow'> <'flex-shrink'> <'flex-basis'>` | CSS简写属性 |
 | `align-self` | `auto`,`flex-start`,`flex-end`,`center`,`baseline`,`stretch` | 指定单个元素的对齐方式,优先级高于`align-items`属性 |
 
 ### ->> Details
