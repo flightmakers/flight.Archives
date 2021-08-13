@@ -17,28 +17,28 @@ Flex元素按照主轴(main-axis)的方向排列,交叉轴(cross-axis)与主轴�
 交叉轴的开始和结束被称为 cross start 和 cross end  
 
 ### Tag/容器(flex container)属性
-| 属性 | 可取值 | 说明 |
-| :---------: | :--: | :-----------: |
-| `display` | `flex`,`inline-flex` | 指定一个容器是否启用Flex布局 |
-| `flex-direction` | `row`,`row-reverse`,`column`,`column-reverse` | 指定主轴(main-axis)的方向 |
-| `flex-wrap` | `nowrap`,`wrap`,`wrap-reverse` | 指定内容超出一行情况的换行方式 |
-| `flex-flow` | `<flex-direction> <flex-wrap>` | CSS简写属性 |
-| `justify-content` | `flex-start`,`flex-end`,`center`,`space-between`,`space-around` | 指定项目在主轴(main-axis)上的对齐方式 |
-| `align-items` | `flex-start`,`flex-end`,`center`,`baseline`,`stretch` | 指定项目在交叉轴(cross-axis)上的对齐方式 |
-| `align-content` | `flex-start`,`flex-end`,`center`,`space-between`,`space-around`,`stretch` | 同时指定项目在两根轴线上的对齐方式(如果项目只有一根轴线.该属性不起作用) |
+属性 | 可取值 | 说明
+:---: | :---: | :---:
+`display` | `flex`,`inline-flex` | 指定一个容器是否启用Flex布局
+`flex-direction` | `row`,`row-reverse`,`column`,`column-reverse` | 指定主轴(main-axis)的方向
+`flex-wrap` | `nowrap`,`wrap`,`wrap-reverse` | 指定内容超出一行情况的换行方式
+`flex-flow` | `<flex-direction> <flex-wrap>` | CSS简写属性
+`justify-content` | `flex-start`,`flex-end`,`center`,`space-between`,`space-around` | 指定项目在主轴(main-axis)上的对齐方式
+`align-items` | `flex-start`,`flex-end`,`center`,`baseline`,`stretch` | 指定项目在交叉轴(cross-axis)上的对齐方式
+`align-content` | `flex-start`,`flex-end`,`center`,`space-between`,`space-around`,`stretch` | 同时指定项目在两根轴线上的对齐方式(如果项目只有一根轴线.该属性不起作用)
 
 ### Tag/项目(flex item)属性
-| 属性 | 可取值 | 说明 |
-| :---------: | :--: | :-----------: |
-| `order` | `<number>` | 指定项目的排列顺序,默认值为0,`order`相同时按照项目在DOM中的顺序排序 |
-| `flex-grow` | `<number>` | 指定项目大小的比例,默认值为0,`width`属性会优先指定flex-item的最小大小 |
-| `flex-shrink` | `<number>` | 指定项目大小在单行空间不足时的收缩比例,默认值为1 |
-| `flex-basis` | `<length>` | 指定项目在主轴方向上的初始大小 |
-| `flex` | `<'flex-grow'> <'flex-shrink'> <'flex-basis'>` | CSS简写属性 |
-| `align-self` | `auto`,`flex-start`,`flex-end`,`center`,`baseline`,`stretch` | 指定单个元素的对齐方式,优先级高于`align-items`属性 |
+属性 | 可取值 | 说明
+:---: | :---: | :---:
+`order` | `<number>` | 指定项目的排列顺序,默认值为0,`order`相同时按照项目在DOM中的顺序排序
+`flex-grow` | `<number>` | 指定项目大小的比例,默认值为0,`width`属性会优先指定flex-item的最小大小
+`flex-shrink` | `<number>` | 指定项目大小在单行空间不足时的收缩比例,默认值为1
+`flex-basis` | `<length>` | 指定项目在主轴方向上的初始大小
+`flex` | `<'flex-grow'> <'flex-shrink'> <'flex-basis'>` | CSS简写属性
+`align-self` | `auto`,`flex-start`,`flex-end`,`center`,`baseline`,`stretch` | 指定单个元素的对齐方式,优先级高于`align-items`属性
 
 ### ->> Details
-#### `Flex` 属性的值 (from MDN)
+####  项目属性 - `Flex` 属性可取值详细介绍 (from MDN)
 ```css
 /* 关键字值 */
 flex: auto;
@@ -68,13 +68,24 @@ flex: initial;
 flex: unset;
 ```
 
+<!--
+### ->> flight.frontendBeautiful
+> 待添加
+
+### ->> flight.Player
+> 待添加
+
 ### ->> Demos
-> 详见MDN,Codepen
+> 待添加
+-->
 
 ### ->> See also
 > Flex Bugs https://github.com/philipwalton/flexbugs
 > 
 > Flexbox Properties Demonstration https://codepen.io/justd/full/yydezN/
+> 
+> Ruanyf#Flex布局的Demo https://www.ruanyifeng.com/blog/2015/07/flex-examples.html  
+> Ruanyf#Flex布局表单的实现 https://www.ruanyifeng.com/blog/2018/10/flexbox-form.html  
 
 ### ->> Reference link
 > MDN中文文档 https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Flexbox
@@ -87,6 +98,10 @@ flex: unset;
 > 
 > Scotch.io https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
 
-### ->> 文档版本&更新记录
+### ->> Version History
 > 现在版本为V1.0
 > 详见 Github(@flightmakers)
+> 
+> 8.11 发布V1.0
+> 
+> 8.13 修改一些表述,增加了几个Ruanyf的链接
