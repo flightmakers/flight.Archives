@@ -162,6 +162,10 @@ transform-origin: 2px 10% 20px; /*如果有三个值, 则前两个值用法不�
 > `transform-origin`属性介绍 https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin
 >
 > CSS-Tricks https://css-tricks.com/almanac/properties/t/transform/
+> 
+> 张鑫旭 - Matrix矩阵 https://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-矩阵/ 
+> 
+> 张鑫旭 - CSS动画 https://www.zhangxinxu.com/wordpress/2010/11/css3-transitions-transforms-animation-introduction/
 
 ### ->> Version History
 > 现在版本为V1.0, 下一版预计添加两处(函数和transform-origin) flight.Playground 以便互动式理解
@@ -170,4 +174,4 @@ transform-origin: 2px 10% 20px; /*如果有三个值, 则前两个值用法不�
 >
 > 2021.8.17 在掘金发布V0.1
 > 
-> 2021.8.18 补全内容. 发布V1.0 
+> 2021.8.18 补全内容. 发布V1.0, 添加了两个链接
