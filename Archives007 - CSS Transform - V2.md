@@ -1,5 +1,5 @@
 ## Title/ CSS Transform完全指南(第二版) #flight.Archives007
-> 序: 发布第二版了! 终身学习, 坚持创作, 为生活埋下微小的信仰. 我是`忘我思考`,共同进步!
+> 序: V2.1了! 终身学习, 坚持创作, 为生活埋下微小的信仰. 我是`忘我思考`,共同进步!
 >
 > 简介: 一篇最简约高效的CSS Transform教程.
 
@@ -117,7 +117,7 @@ element {
 
     `t`: `<length>`, 元素沿Z轴平移的距离.
 
-### Tag/ Transform 属性介绍
+### Tag/ Transform 相关属性介绍
 1. `transform-origin`
    
    指定元素变形的原点, 默认值为 `center`.
@@ -152,6 +152,7 @@ element {
 
    指定变形的布局框
 
+   可取值
    ```
    /*不了解CSS Box Model的, 可以去搜一下, 本文不详细介绍.*/
    transform-box: content-box /*使用内容框为盒布局方式*/
@@ -163,6 +164,31 @@ element {
    transform-box: stroke-box /*使用描边框为盒布局方式. 描边框是包含元素的几何形状及其笔画形状的边界框.*/
    
    transform-box: view-box /*使用最近父元素的SVG Viewport为盒布局方式*/
+   ``` 
+
+4. `perspective`
+
+   可以独立为一个CSS属性, 指定透视深度, 和作为函数使用方法一致.
+
+5. `perspective-origin`
+
+   指定了3d观察者的位置, 值为 `perspective` 属性的消失点
+
+   可取值:
+   ```
+   /*x-position 和 y-position 都是 <length-percentage> 值, 可取负值*/
+   
+   /*
+   可使用的关键字: 
+   x-position: left(0%), center(50%), right(100%)
+   y-position: top(0%), center(50%), bottom(100%)
+   */
+   
+   perspective-origin: x-position; /*一个值*/
+
+   perspective-origin: x-position y-position; /*两个值*/
+
+   perspective-origin: y-position x-position; /*如果两个值都是关键字, 先y后x也是允许的*/
    ``` 
 
 <!--
@@ -200,7 +226,7 @@ element {
 > 张鑫旭 - CSS动画 https://www.zhangxinxu.com/wordpress/2010/11/css3-transitions-transforms-animation-introduction/
 
 ### ->> Version History
-> 现在版本为V2.0, 下一版预计添加两处(函数和transform-origin) flight.Playground 以便互动式理解
+> 现在版本为V2.1, 下一版预计添加几处 flight.Playground(hover QuickView) 以便互动式理解
 > 
 > 详见 Github(@flightmakers)
 >
@@ -208,4 +234,6 @@ element {
 > 
 > 2021.8.18 补全内容. 发布V1.0, 添加了两个链接
 > 
-> 2021.8.24 补全了许多其他Transform属性,发布V2
+> 2021.8.24上午 补全了许多其他Transform属性,发布V2
+> 
+> 2021.8.24中午 又添加了两个透视属性, 发布V2.1
